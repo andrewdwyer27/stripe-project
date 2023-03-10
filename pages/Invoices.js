@@ -1,5 +1,6 @@
-import React, {Component} from "react";
+import React, {useState, useEffect} from "react";
 
+/*
 class Invoices1 extends Component {
     constructor(props) {
         super(props);
@@ -26,6 +27,7 @@ class Invoices1 extends Component {
         )
     }
 }
+*/
 
 export default function Invoices2() {
     const [name, setName] = useState(""); //useState takes care of binding 
@@ -49,6 +51,7 @@ export default function Invoices2() {
         <div>
             <h1>Hello Word</h1>
             <input onChange = {handleNameChange} value = {name}/> 
+            <h1>{name}</h1>
         </div>
     )
 }
